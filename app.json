@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "rvce-vms",
+    "slug": "rvce-vms",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rvce.vms",
+      "googleServicesFile": "./GoogleService-Info.plist"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.rvce.vms",
+      "googleServicesFile": "./google-services.json"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "config": {
+        "firebase": {
+          "apiKey": "AIzaSyC4c0g_79hMyVSDVVsvdo-Y9nDtG-BkFDM",
+          "authDomain": "rv-vms.firebaseapp.com",
+          "projectId": "rv-vms",
+          "storageBucket": "rv-vms.firebasestorage.app",
+          "messagingSenderId": "501848814564",
+          "appId": "1:501848814564:web:94c3a9cea212c8e9f98df1",
+          "measurementId": "G-153VSDF5LX"
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      "@react-native-firebase/app",
+      "@react-native-firebase/auth"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "ff9ca09f-80f6-4923-b9d0-0129aaff394b"
+      }
+    },
+    "owner": "yogishhg"
+  }
+}
